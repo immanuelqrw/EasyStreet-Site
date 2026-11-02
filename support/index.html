@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Easy Street — Support</title>
+<meta name="description" content="Help with Easy Street, and how to reach us.">
+<!-- Written by hand, as TrackRecord's support page is; no markdown source. The privacy page's
+     shell (web/privacy/template.html) has the same styles: change both together. -->
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #f3efe6;
+    --fg: #1f2833;
+    --muted: #5e6670;
+    --card: #ffffff;
+    --link: #1e8a6e;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #141b24; --fg: #eceff3; --muted: #9aa4b0; --card: #232d39; --link: #5fd6a6; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 2.5rem 1rem 4rem;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 43rem; margin: 0 auto; }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 .35rem; letter-spacing: -.02em; }
+  .tagline { color: var(--muted); margin: 0 0 1.6rem; }
+  h2 { font-size: 1.15rem; margin: 2rem 0 .7rem; }
+  section { background: var(--card); border-radius: 22px; padding: 1.1rem 1.4rem; margin: 0 0 .8rem; }
+  h3 { font-size: 1rem; margin: 0 0 .3rem; }
+  p { margin: 0 0 .6rem; }
+  section p:last-child { margin: 0; }
+  a { color: var(--link); }
+  footer { color: var(--muted); font-size: .9rem; margin-top: 2rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Easy Street — Support</h1>
+  <p class="tagline">Calmer moped routes in New York City.</p>
+
+  <section>
+    <p>Questions, bug reports, or a street that scored wrong:
+      <a href="mailto:easystreet@patacognition.tech">easystreet@patacognition.tech</a></p>
+    <p>One person reads this, so replies aren't instant, but they come from someone who can fix
+      what you're writing about.</p>
+  </section>
+
+  <h2>A street that felt wrong</h2>
+  <section>
+    <p>Tap the street, then <strong>Felt worse</strong> or <strong>Felt better</strong> under the
+      direction you rode. Flags stay on your phone; to send them, open Settings → Ride flags →
+      Export flags and attach the file to an email. The most useful reports name the street, the
+      direction and what made it feel that way: "a double-parked truck every block" can be checked
+      against the data in a way a score can't.</p>
+  </section>
+
+  <h2>Common questions</h2>
+  <section>
+    <h3>Is a calm street a safe street?</h3>
+    <p>No. A score estimates how calm a street is likely to feel, from public data: speed limits,
+      lanes, traffic, trucks, buses, bike lanes, crashes and pavement. It can't see today's traffic,
+      weather or construction the city hasn't published. Obey signs and traffic laws, and ride with
+      care.</p>
+  </section>
+  <section>
+    <h3>Why is a street grey, or never in a route?</h3>
+    <p>Grey streets are ones your moped class can't use, by our reading of the rules: highways, the
+      bridges mopeds are barred from, car-free park drives, paths, and the wrong way down one-way
+      streets. It's a reading, not legal advice; the signs on the street take precedence.</p>
+  </section>
+  <section>
+    <h3>Why did a bus lane stop counting?</h3>
+    <p>Part-time bus lanes follow their posted hours. Outside them, a bus lane is the right-hand
+      lane you ride in, so the street scores as it does then. Routes always assume they're in
+      force.</p>
+  </section>
+  <section>
+    <h3>Does my location leave my phone?</h3>
+    <p>No. Routes are worked out on your phone, and your location is used only there. See the
+      <a href="/privacy/">privacy policy</a>.</p>
+  </section>
+  <section>
+    <h3>Does it work offline?</h3>
+    <p>Yes. The street data is in the app; it checks for newer data when it can, and keeps what it
+      has when it can't. Address search needs a connection.</p>
+  </section>
+
+  <footer><a href="/">Easy Street</a> · <a href="/privacy/">Privacy policy</a></footer>
+</main>
+</body>
+</html>
